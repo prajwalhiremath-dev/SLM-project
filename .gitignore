@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.*
+
+# Data and artifacts
+data/cleaned/
+data/tokenized/
+artifacts/
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.npy
+*.npz
+
+# Logs
+logs/
+wandb/
+*.log

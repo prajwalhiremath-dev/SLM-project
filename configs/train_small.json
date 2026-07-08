@@ -1,0 +1,32 @@
+{
+  "data_dir": "data/tokenized",
+  "tokenizer_path": "artifacts/tokenizer/tokenizer.json",
+  "out_dir": "checkpoints",
+  "model": {
+    "block_size": 256,
+    "n_layer": 6,
+    "n_head": 6,
+    "n_embd": 384,
+    "dropout": 0.1,
+    "bias": false
+  },
+  "train": {
+    "batch_size": 16,
+    "gradient_accumulation_steps": 4,
+    "max_steps": 50000,
+    "eval_interval": 500,
+    "eval_iters": 100,
+    "save_interval": 1000,
+    "learning_rate": 0.0003,
+    "min_lr": 0.00003,
+    "warmup_steps": 1000,
+    "weight_decay": 0.1,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "grad_clip": 1.0,
+    "device": "auto",
+    "seed": 1337,
+    "use_amp": true,
+    "compile": false
+  }
+}
